@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Wellness Assistant</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <h1>Wellness Assistant</h1>
+
+  <div id="patientInfo">
+    <h2>Patient Information</h2>
+    <input type="text" id="patientName" placeholder="Patient Name">
+  </div>
+
+  <div id="medications">
+    <h2>Medication List</h2>
+    <ul id="medicationList"></ul>
+  </div>
+
+  <div id="bloodPressure">
+    <h2>Blood Pressure Readings</h2>
+    <div>
+      <input type="text" id="bloodPressureName" placeholder="Patient Name">
+      <input type="text" id="systolicInput" placeholder="Systolic">
+      <input type="text" id="diastolicInput" placeholder="Diastolic">
+      <button onclick="addBloodPressure()">Add Reading</button>
+    </div>
+    <ul id="bloodPressureList"></ul>
+  </div>
+
+  <div id="exercise">
+    <h2>Exercise List</h2>
+    <input type="text" id="exerciseInput" placeholder="Exercise">
+    <button onclick="addExercise()">Add Exercise</button>
+    <ul id="exerciseList"></ul>
+  </div>
+
+  <div id="food">
+    <h2>Food List</h2>
+    <input type="text" id="foodInput" placeholder="Food Item">
+    <button onclick="addFood()">Add Food</button>
+    <ul id="foodList"></ul>
+  </div>
+
+  <div id="meditation">
+    <h2>Meditation List</h2>
+    <input type="text" id="meditationInput" placeholder="Meditation Practice">
+    <button onclick="addMeditation()">Add Practice</button>
+    <ul id="meditationList"></ul>
+  </div>
+
+  <div id="addMedication">
+    <h2>Add Medication</h2>
+    <input type="text" id="medicationName" placeholder="Medication Name">
+    <input type="time" id="medicationTime" placeholder="Time">
+    <button onclick="addMedication()">Add</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
